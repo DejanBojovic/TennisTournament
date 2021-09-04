@@ -233,12 +233,9 @@ const matchSimulation = pair => {
     }
 
     if(Math.random() < 0.5) {
-      const updatedScore = updateScore(match, "player1", "player2")
-      match = updatedScore;
-
+      updateScore(match, "player1", "player2")
     } else {
-      const updatedScore = updateScore(match, "player2", "player1")
-      match = updatedScore;
+      updateScore(match, "player2", "player1")
     }
   }
 
